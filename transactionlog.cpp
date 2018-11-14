@@ -4,6 +4,13 @@
 #include <vector>
 #include <iostream>
 
+Transactionlog::Transactionlog()
+{
+    newAmount = 0.0;
+    newMinBal = 0.0;
+    newAvgBal = 0.0;
+}    
+
 void Transactionlog::read()
 {
     while(true)
