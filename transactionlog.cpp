@@ -4,11 +4,6 @@
 #include <vector>
 #include <iostream>
 
-Transactionlog::Transactionlog()
-{
-    
-}
-
 void Transactionlog::read()
 {
     while(true)
@@ -50,9 +45,9 @@ void Transactionlog::print_vector()
         std::cout << "------------------------------------" << std::endl;
     }
     std::cout << "Minimum Balance: " << min_daily_bal(dailyBalance) << std::endl;
-    std::cout << "Interest on Minimum: " << min_daily_bal(dailyBalance) * INTEREST << std::endl;
+    std::cout << "Interest on Minimum: " << min_daily_bal(dailyBalance) * .005 << std::endl;
     std::cout << "Average Balance: " << avg_daily_bal(dailyBalance) << std::endl;
-    std::cout << "Interest on Average: " << avg_daily_bal(dailyBalance) * INTEREST << std::endl;
+    std::cout << "Interest on Average: " << avg_daily_bal(dailyBalance) * .005 << std::endl;
 }
 
 double Transactionlog::min_daily_bal(const std::vector<double> &t)
