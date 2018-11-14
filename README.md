@@ -1,2 +1,2 @@
 # cis201-template
-Template repository for generic cis201 project
+Chapter 6 Vectors Programming Project
