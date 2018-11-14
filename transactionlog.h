@@ -20,7 +20,6 @@ private:
     double newAmount;
     double newMinBal;
     double newAvgBal;
-    const double INTEREST = .005;
 
 };
 
