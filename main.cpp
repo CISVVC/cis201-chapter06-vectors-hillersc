@@ -2,6 +2,7 @@
 #include "statement.h"
 #include <iostream>
 
+// Fill Statement object with Transaction objects
 void add_transactions(Statement &s)
 {
     s.add_transaction(Transaction(1, 1143.24, "Initial Balance"));
@@ -26,6 +27,7 @@ int main()
 
     add_transactions(balances);
 
+    // Output the statement of all entered Transactions
     balances.print_balances();
     
     return 0;

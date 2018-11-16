@@ -6,9 +6,13 @@
 class Transaction
 {
 public:
+    // Default constructor
     Transaction();
+    // Normal constructor
     Transaction(int day, double amount, std::string description);
+    // Read data in Transaction object
     void read();
+    // Print data in Transaction object
     void print() const; 
     int get_day() const;
     double get_amount() const;
