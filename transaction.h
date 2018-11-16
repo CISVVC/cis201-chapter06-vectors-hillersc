@@ -1,3 +1,11 @@
+/*
+File: transaction.h
+Description: Interface for transaction.cpp
+Author: Colby Hillers
+Email: hillersc144964@student.vvc.edu
+Date: 11/15/18
+*/
+
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
 #include <string>

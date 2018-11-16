@@ -1,3 +1,11 @@
+/*
+File: transaction.cpp
+Description: Implementation for Transaction class
+Author: Colby Hillers
+Email: hillersc144964@student.vvc.edu
+Date: 11/15/18
+*/
+
 #include "transaction.h"
 #include <iostream>
 

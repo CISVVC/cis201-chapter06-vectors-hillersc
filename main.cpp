@@ -1,3 +1,11 @@
+/*
+File: main.cpp
+Description: main file for transaction/statement program
+Author: Colby Hillers
+Email: hillersc144964@student.vvc.edu
+Date: 11/15/18
+*/
+
 #include "transaction.h"
 #include "statement.h"
 #include <iostream>

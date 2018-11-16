@@ -1,3 +1,11 @@
+/*
+File: statement.cpp
+Description: Implementation for Statement class
+Author: Colby Hillers
+Email: hillersc144964@student.vvc.edu
+Date: 11/15/18
+*/
+
 #include "statement.h"
 #include "transaction.h"
 #include <iostream>

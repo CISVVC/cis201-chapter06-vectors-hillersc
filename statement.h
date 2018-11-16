@@ -1,3 +1,11 @@
+/*
+File: statement.h
+Description: Interface for statement.cpp
+Author: Colby Hillers
+Email: hillersc144964@student.vvc.edu
+Date: 11/15/18
+*/
+
 #ifndef STATEMENT_H
 #define STATEMENT_H
 #include <vector>
