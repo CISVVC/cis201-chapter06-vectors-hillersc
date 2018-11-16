@@ -1,22 +1,19 @@
 #include "transaction.h"
 #include <iostream>
 
-// Initialize default constructor values to zero
 Transaction::Transaction()
 {
     newDay = 0;
     newAmount = 0.0;
 }
 
-// Initialize object's values to user's parameters
-Transaction::Transaction(int day, double amount, std::string descrip)
+Transaction::Transaction(int day, double amount, std::string description)
 {
     newDay = day;
     newAmount = amount;
-    newDescrip = descrip;
+    newDescription = description;
 }
 
-// Read in user values to put in Transaction object
 void Transaction::read()
 {
     std::cout << "Day: ";
@@ -25,23 +22,27 @@ void Transaction::read()
     std::cin >> newAmount;
     std::cin.ignore();
     std::cout << "Description: ";
-    std::getline(std::cin, newDescrip);
+    std::getline(std::cin, newDescription);
 }
 
-// Return day as an int
-int Transaction::get_day()
+void Transaction::print() const
+{
+    std::cout << "Day: " << newDay << std::endl;
+    std::cout << "Amount: " << newAmount << std::endl;
+    std::cout << "Description: " << newDescription << std::endl;
+}
+
+int Transaction::get_day() const
 {
     return newDay;
 }
 
-// Return amount/balance as double
-double Transaction::get_amount()
+double Transaction::get_amount() const
 {
     return newAmount;
 }
 
-// Return description as a string
-std::string Transaction::get_descrip()
+std::string Transaction::get_description() const
 {
-    return newDescrip;
+    return newDescription;
 }

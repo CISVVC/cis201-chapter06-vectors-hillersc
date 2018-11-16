@@ -1,16 +1,32 @@
 #include "transaction.h"
-#include "transactionlog.h"
+#include "statement.h"
 #include <iostream>
+
+void add_transactions(Statement &s)
+{
+    s.add_transaction(Transaction(1, 1143.24, "Initial Balance"));
+    s.add_transaction(Transaction(2, -224, "Check 2140"));
+    s.add_transaction(Transaction(3, -193, "Check 2141"));
+    s.add_transaction(Transaction(4, 500, "ATM deposit"));
+    s.add_transaction(Transaction(5, -10, "Check 2142"));
+    s.add_transaction(Transaction(6, -105, "Check 2143"));
+    s.add_transaction(Transaction(7, -210, "Check 2144"));
+    s.add_transaction(Transaction(8, -201, "Check 2145"));
+    s.add_transaction(Transaction(16, 1200, "ATM deposit"));
+    s.add_transaction(Transaction(16, -100, "Check 2146"));
+    s.add_transaction(Transaction(17, -200, "Check 2147"));
+    s.add_transaction(Transaction(20, 900, "ATM deposit"));
+    s.add_transaction(Transaction(30, 700, "ATM deposit"));
+    
+}
 
 int main()
 {
-	// Create Transactionlog object
-    Transactionlog statement;
+    Statement balances;
 
-    // Read object
-    statement.read();
-    // Print the object's vector
-    statement.print_vector();
+    add_transactions(balances);
 
+    balances.print_balances();
+    
     return 0;
 }

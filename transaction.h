@@ -6,21 +6,17 @@
 class Transaction
 {
 public:
-    // Transaction constructors
     Transaction();
-    Transaction(int day, double amount, std::string descrip);
-    // Reads in values for Transaction object
+    Transaction(int day, double amount, std::string description);
     void read();
-    // Return day for Transaction object
-    int get_day();
-    // Return amount/balance for Transaction object
-    double get_amount();
-    // Return description for Transaction object
-    std::string get_descrip();
+    void print() const; 
+    int get_day() const;
+    double get_amount() const;
+    std::string get_description() const;
 private:
     int newDay;
     double newAmount;
-    std::string newDescrip;
+    std::string newDescription;
 };
 
 #endif
